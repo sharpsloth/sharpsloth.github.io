@@ -1,0 +1,65 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+header {
+    background-color: #212930;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Paprika', cursive;
+    font-size: 2.5rem;
+    color: #f1efeb;
+    padding: 5px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.motto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+	color: #f1efeb;
+    padding: 5px;
+}
+
+header img {
+    width: 12rem;
+    float: left;
+}
+
+header, nav,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1efeb;
+    text-align: center;
+}
+
+nav li a {
+    display: block;
+    color: #252119;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.875rem;
+}
+
+nav li a.active {
+    background-color: #668d3c;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #bdd09f;
+}
