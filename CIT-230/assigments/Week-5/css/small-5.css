@@ -1,0 +1,86 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+header {
+    background-color: #212930;
+}
+
+.title {
+    font-family: 'Paprika', cursive;
+    font-size: 1.5rem;
+    color: #f1efeb;
+    padding: 10px;
+    text-shadow: 2px 2px 2px #000;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
+    /* border: 3px solid yellow; */
+}
+
+.motto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #f1efeb;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    /* border: 3px solid yellow; */
+}
+
+.column {
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    margin: o auto;
+}
+
+header img {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    /* border: 3px solid yellow; */
+}
+
+header,
+nav,
+main,
+footer {
+    margin: auto;
+    max-width: 900px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1efeb;
+    text-align: center;
+}
+
+nav li a {
+    display: block;
+    color: #252119;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+nav li a.active {
+    background-color: #668d3c;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #bdd09f;
+}
