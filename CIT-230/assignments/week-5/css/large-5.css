@@ -5,7 +5,7 @@
     }
 
     .navigation li {
-        display: inline;
+        display: inline-block;
     }
 .fivedayforecast {
     display: inline-block;
