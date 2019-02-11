@@ -8,7 +8,7 @@
         display: inline-block;
     }
 .fivedayforecast {
-    display: inline-block;
+    display: block;
 }
 
 }
