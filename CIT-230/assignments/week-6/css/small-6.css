@@ -1,0 +1,253 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+header {
+    background-color: #212930;
+}
+
+.title {
+    font-family: 'Paprika', cursive;
+    font-size: 1.5rem;
+    color: #f1efeb;
+    padding: 10px;
+    text-shadow: 2px 2px 2px #000;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
+    /* border: 3px solid yellow; */
+}
+
+.motto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #f1efeb;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    /* border: 3px solid yellow; */
+}
+
+.column {
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    margin: o auto;
+}
+
+header img {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    /* border: 3px solid yellow; */
+}
+
+header,
+nav,
+main,
+footer {
+    margin: auto;
+    max-width: 900px;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1efeb;
+    text-align: center;
+    width: 100%;
+}
+
+.navigation li a {
+    display: block;
+    color: #252119;
+    padding: .75rem;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.navigation li a.active {
+    background-color: #668d3c;
+}
+
+.navigation li a:hover:not(.active) {
+    background-color: #bdd09f;
+    font-weight: 700;
+}
+
+.navigation li a:hover {
+    font-weight: 700;
+}
+.navigation {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+.cityname {
+    font-family: roboto, sans-serif;
+    text-align: center;
+    max-width: 768px;
+    margin: .25em auto;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #6c3108;
+    color: #f1efeb;
+    padding: .5em;
+}
+
+.weathersummary {
+    max-width: 768px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.cityimage {
+    max-width: 768px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px #aaaaaa; 
+}
+
+.summary {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40%;
+    border: 2px solid #212930;
+    box-shadow: 10px 10px 10px #21293021;
+    border-radius: 5px;
+    background-color: #212930a8;
+    padding: 20px;
+}
+
+.summary h3 {
+    color: #f1efeb;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration-line: underline;
+}
+
+.summarydetails {
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+}
+.label {
+    text-align: right;
+    color: #f1efeb;
+    display: inline-block;
+    width: 50%;
+}
+
+.value {
+    text-align: left;
+    color: #f8e917;
+    display: inline-block;
+    width: 50%;
+
+}
+
+.fivedayforecast {
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+    display: none;
+}
+
+.forecasticon img {
+    max-width: 50px;
+}
+
+.fivedayforecast h4 {
+    padding: 10px;
+}
+
+.forecasttable {
+    border: 1px solid #212930;
+    column-width: 100px;
+}
+
+.forecasttable th {
+    border-bottom: 1px solid #212930;
+    font-size: 1em;
+    padding: 3px;
+    width: 20%;
+
+}
+
+article h4, article h5 {
+font-family: roboto, sans-serif;
+padding: 5px;
+}
+
+article h4 {
+    font-size: 1.5em;
+}
+article h5 {
+    font-size: .75em;
+    color: #668d3c;
+}
+
+article img {
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 0 0 10px 5px #777; 
+   
+
+}
+article {
+    background-color: #b99c6b9d;
+    max-width: 768px;
+    padding: 20px;
+    border: 1px solid #212930;
+}
+
+article p {
+    margin: 10px auto;
+}
+
+footer {
+    background-color: #668d3c;
+    max-width: 768px;
+    margin: 10px auto;
+    padding: 10px;
+
+}
+
+footer img {
+    max-width: 250px;
+    margin: 10px auto;
+    display: inline-block;
+}
+
+.contactinfo {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px;
+
+}
+

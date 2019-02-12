@@ -1,0 +1,14 @@
+@media only screen and (min-width: 768px) {
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: inline-block;
+    }
+.fivedayforecast {
+    display: block;
+}
+
+}
