@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 32.5em) {
 
     .navigation li:first-child {
         display: none;
@@ -9,6 +9,15 @@
     }
 .fivedayforecast {
     display: block;
+}
+
+header img {
+    width: 115px;
+    height: auto;
+}
+
+.title {
+    font-size: 3em;
 }
 
 }

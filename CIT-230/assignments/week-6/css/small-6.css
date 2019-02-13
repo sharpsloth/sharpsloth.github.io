@@ -1,6 +1,7 @@
 * {
     margin: 0 auto;
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
 }
 
 body {
@@ -9,46 +10,34 @@ body {
 
 header {
     background-color: #212930;
+    text-align: center;
 }
 
 .title {
     font-family: 'Paprika', cursive;
-    font-size: 1.5rem;
     color: #f1efeb;
-    padding: 10px;
+    padding: .2em;
     text-shadow: 2px 2px 2px #000;
-    display: inline-block;
-    text-align: center;
+   /* border: 3px solid green;*/
     margin: 0 auto;
-    width: 100%;
-    vertical-align: top;
-    text-align: center;
-    /* border: 3px solid yellow; */
 }
 
 .motto {
-    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: #f1efeb;
-    padding: 10px;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-    display: inline-block;
-    /* border: 3px solid yellow; */
+    padding: .3em;
+    /*border: 3px solid pink;*/
+    font-weight: inherit;
 }
 
 .column {
     display: inline-block;
-    width: 65%;
     vertical-align: top;
-    margin: o auto;
 }
 
 header img {
-    width: 30%;
     display: inline-block;
-    text-align: center;
+    width: 25%;
     /* border: 3px solid yellow; */
 }
 
@@ -56,7 +45,6 @@ header,
 nav,
 main,
 footer {
-    margin: auto;
     max-width: 900px;
 }
 
@@ -135,17 +123,20 @@ footer {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 40%;
     border: 2px solid #212930;
     box-shadow: 10px 10px 10px #21293021;
     border-radius: 5px;
     background-color: #212930a8;
     padding: 20px;
+    line-height: 1.2em;
+    letter-spacing: .12em;
 }
 
 .summary h3 {
     color: #f1efeb;
     text-align: center;
+    font-weight: inherit;
+    line-height: 1.7em;
     font-size: 1.5em;
     text-decoration-line: underline;
 }
@@ -230,7 +221,7 @@ article p {
     margin: 10px auto;
 }
 
-footer {
+.contact {
     background-color: #668d3c;
     max-width: 768px;
     margin: 10px auto;
@@ -238,16 +229,29 @@ footer {
 
 }
 
-footer img {
+.contact img {
     max-width: 250px;
     margin: 10px auto;
     display: inline-block;
+    border: 2px solid #212930;
 }
 
 .contactinfo {
     display: inline-block;
     margin: 10px auto;
     padding: 10px;
+    /*border: 3px solid yellow;*/
+    vertical-align: top;
 
 }
 
+footer {
+    background-color: #212930;
+    font-size: .5em;
+    color: #f1efeb;
+    vertical-align: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 768px;
+}
