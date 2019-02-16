@@ -15,31 +15,34 @@ header {
 
 .title {
     font-family: 'Paprika', cursive;
+    font-size: 1.2em;
     color: #f1efeb;
-    padding: .2em;
+    padding: .1em;
     text-shadow: 2px 2px 2px #000;
-   /* border: 3px solid green;*/
-    margin: 0 auto;
+    margin: 0px;
+    /* border: 3px solid green;*/
 }
 
 .motto {
-    font-size: 1rem;
+    font-size: .9rem;
     color: #f1efeb;
-    padding: .3em;
+    padding: .2em;
     /*border: 3px solid pink;*/
     font-weight: inherit;
 }
 
 .column {
     display: inline-block;
-    vertical-align: top;
+    /*border: 3px solid grey;*/
 }
 
 header img {
     display: inline-block;
-    width: 25%;
-    /* border: 3px solid yellow; */
+    padding: 5px;
+    max-width: 50px;
+    /*border: 3px solid yellow;*/
 }
+
 
 header,
 nav,
@@ -78,6 +81,7 @@ footer {
 .navigation li a:hover {
     font-weight: 700;
 }
+
 .navigation {
     margin: 0 auto;
     max-width: 900px;
@@ -113,10 +117,12 @@ footer {
     position: relative;
 
 }
+
 .cityimage {
+    width: 100%;
     max-width: 768px;
     margin: 0 auto;
-    box-shadow: 5px 5px 10px #aaaaaa; 
+    box-shadow: 5px 5px 10px #aaaaaa;
 }
 
 .summary {
@@ -146,6 +152,7 @@ footer {
     display: inline-block;
     width: 100%;
 }
+
 .label {
     text-align: right;
     color: #f1efeb;
@@ -189,27 +196,31 @@ footer {
 
 }
 
-article h4, article h5 {
-font-family: roboto, sans-serif;
-padding: 5px;
+article h4,
+article h5 {
+    font-family: roboto, sans-serif;
+    padding: 5px;
 }
 
 article h4 {
     font-size: 1.5em;
 }
+
 article h5 {
     font-size: .75em;
     color: #668d3c;
 }
 
 article img {
+    width: 100%;
     max-width: 300px;
     display: block;
     margin: 10px auto;
-    box-shadow: 0 0 10px 5px #777; 
-   
+    box-shadow: 0 0 10px 5px #777;
+
 
 }
+
 article {
     background-color: #b99c6b9d;
     max-width: 768px;
