@@ -103,7 +103,7 @@ footer {
     font-family: roboto, sans-serif;
     text-align: center;
     max-width: 768px;
-    margin: .25em auto;
+    margin: 15px auto;
     font-size: 1.25rem;
     font-weight: bold;
     background-color: #6c3108;
@@ -225,6 +225,7 @@ article {
     background-color: #b99c6b9d;
     max-width: 768px;
     padding: 20px;
+    margin: 15px auto;
     border: 1px solid #212930;
 }
 
@@ -235,12 +236,12 @@ article p {
 .contact {
     background-color: #668d3c;
     max-width: 768px;
-    margin: 10px auto;
+    margin: 15px auto 0px;
     padding: 10px;
 
 }
 
-.contact img {
+#map {
     max-width: 250px;
     margin: 10px auto;
     display: inline-block;
@@ -256,9 +257,14 @@ article p {
 
 }
 
+.smallicon {
+    border: none;
+    display: inline;
+}
+
 footer {
     background-color: #212930;
-    font-size: .5em;
+    font-size: .75em;
     color: #f1efeb;
     vertical-align: center;
     text-align: center;
