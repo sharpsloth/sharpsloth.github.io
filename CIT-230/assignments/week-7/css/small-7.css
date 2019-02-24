@@ -12,7 +12,7 @@ header {
     background-color: #212930;
     text-align: center;
     display: flex;
-    flex-flow: row, nowrap;
+    flex-flow: row nowrap;
     justify-content: center;
 
 }
