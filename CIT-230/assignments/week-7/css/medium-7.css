@@ -9,7 +9,8 @@
     }
 
     .navigation li {
-        display: inline-block;
+        display: block;
+        width: 100%;
     }
 
     .fivedayforecast {
