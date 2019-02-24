@@ -13,7 +13,6 @@ header {
     text-align: center;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
 
 }
 
@@ -62,7 +61,6 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .navigation li a {
@@ -90,6 +88,7 @@ footer {
 
 .navigation li:first-child {
     display: block;
+    width: 100%;
 }
 
 .navigation li {
@@ -98,6 +97,7 @@ footer {
 
 .responsive li {
     display: block;
+    width: 100%;
 }
 
 .cityname {
