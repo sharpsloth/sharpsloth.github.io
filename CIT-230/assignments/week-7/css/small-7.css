@@ -11,6 +11,10 @@ body {
 header {
     background-color: #212930;
     text-align: center;
+    display: flex;
+    flex-flow: row, nowrap;
+    justify-content: center;
+
 }
 
 .title {
@@ -44,11 +48,9 @@ header img {
 }
 
 
-header,
-nav,
 main,
 footer {
-    max-width: 900px;
+    max-width: 60rem;
 }
 
 .navigation {
@@ -58,6 +60,9 @@ footer {
     background-color: #f1efeb;
     text-align: center;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .navigation li a {
@@ -83,11 +88,6 @@ footer {
     font-weight: 700;
 }
 
-.navigation {
-    margin: 0 auto;
-    max-width: 900px;
-}
-
 .navigation li:first-child {
     display: block;
 }
@@ -103,7 +103,6 @@ footer {
 .cityname {
     font-family: roboto, sans-serif;
     text-align: center;
-    max-width: 768px;
     margin: 15px auto;
     font-size: 1.25rem;
     font-weight: bold;
@@ -113,7 +112,6 @@ footer {
 }
 
 .weathersummary {
-    max-width: 768px;
     margin: 0 auto;
     position: relative;
 
@@ -121,20 +119,19 @@ footer {
 
 .cityimage {
     width: 100%;
-    max-width: 768px;
     margin: 0 auto;
     box-shadow: 5px 5px 10px #aaaaaa;
 }
 
 .summary {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 1rem;
+    left: 1rem;
     border: 2px solid #212930;
     box-shadow: 10px 10px 10px #21293021;
     border-radius: 5px;
     background-color: #212930a8;
-    padding: 20px;
+    padding: 1rem;
     line-height: 1.2em;
     letter-spacing: .12em;
 }
@@ -170,7 +167,7 @@ footer {
 }
 
 .fivedayforecast {
-    max-width: 500px;
+    max-width: 768px;
     margin: 10px auto;
     text-align: center;
     display: none;
@@ -224,7 +221,6 @@ article img {
 
 article {
     background-color: #668d3c79;
-    max-width: 768px;
     padding: 20px;
     margin: 15px auto;
     border: 1px solid #212930;
@@ -236,25 +232,26 @@ article p {
 
 .contact {
     background-color: #668d3c;
-    max-width: 768px;
     margin: 15px auto 0px;
     padding: 10px;
-
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 #map {
     max-width: 250px;
-    margin: 10px auto;
     display: inline-block;
     border: 2px solid #212930;
+    grid-row-start: 1;
+    margin: 0 auto;
 }
 
 .contactinfo {
+    grid-row-start: 2;
     display: inline-block;
-    margin: 10px auto;
     padding: 10px;
+    margin: 0 auto;
     /*border: 3px solid yellow;*/
-    vertical-align: top;
 
 }
 
@@ -271,5 +268,21 @@ footer {
     text-align: center;
     margin: 0 auto;
     padding: 1em;
-    max-width: 768px;
+}
+
+.gallery {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.gallery figure {
+    padding: 1rem;
+    margin: .5rem;
+    font-style: italic;
+    box-shadow: 0 0 5px 5px #ddd;
+}
+
+.gallery figure img {
+    width: 100%;
 }

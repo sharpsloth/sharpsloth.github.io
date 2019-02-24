@@ -1,0 +1,65 @@
+@media only screen and (min-width: 32.5em) {
+
+    .navigation {
+        flex-flow: row nowrap;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: inline-block;
+    }
+
+    .fivedayforecast {
+        display: block;
+    }
+
+    header img {
+        max-width: 115px;
+        ;
+        width: 115px;
+        height: auto;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    article img {
+        float: right;
+        margin-left: 15px;
+    }
+
+    .contact {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #map {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        margin: 0 0 0 auto;
+    }
+
+    .contactinfo {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        margin: 0 auto 0 0;
+    }
+
+    .gallery {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .gallery figure {
+        padding: 1rem;
+        margin: .5rem;
+        font-style: italic;
+    }
+
+}
