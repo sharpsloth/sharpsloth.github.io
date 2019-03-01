@@ -11,9 +11,12 @@ body {
 header {
     background-color: #212930;
     text-align: center;
+}
+
+.headercontainer {
     display: flex;
     flex-flow: row nowrap;
-
+    align-items: center;
 }
 
 .title {
@@ -34,15 +37,8 @@ header {
     font-weight: inherit;
 }
 
-.column {
-    display: inline-block;
-    /*border: 3px solid grey;*/
-}
-
 header img {
-    display: inline-block;
     padding: 5px;
-    max-width: 50px;
     /*border: 3px solid yellow;*/
 }
 
@@ -58,7 +54,6 @@ footer {
     padding: 0;
     background-color: #f1efeb;
     text-align: center;
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -88,7 +83,6 @@ footer {
 
 .navigation li:first-child {
     display: block;
-    width: 100%;
 }
 
 .navigation li {
@@ -97,14 +91,13 @@ footer {
 
 .responsive li {
     display: block;
-    width: 100%;
 }
 
 .cityname {
     font-family: roboto, sans-serif;
     text-align: center;
     margin: 15px auto;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
     background-color: #668d3c;
     color: #f1efeb;
@@ -272,8 +265,8 @@ footer {
 
 .gallery {
     margin: 0 auto;
-    display: flex;
-    flex-flow: column nowrap;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .gallery figure {
