@@ -2,6 +2,7 @@
 
     .navigation {
         flex-flow: row nowrap;
+        align-items: stretch;
     }
 
     .navigation li:first-child {
@@ -15,13 +16,6 @@
 
     .fivedayforecast {
         display: block;
-    }
-
-    header img {
-        max-width: 115px;
-        ;
-        width: 115px;
-        height: auto;
     }
 
     .title {
@@ -62,6 +56,7 @@
         margin: .5rem;
         font-style: italic;
     }
+
     form input.submitButton {
         margin-left: 5rem;
         margin-right: 5rem;

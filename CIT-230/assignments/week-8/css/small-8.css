@@ -10,10 +10,7 @@ body {
 
 header {
     background-color: #212930;
-    text-align: center;
-}
 
-.headercontainer {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -22,12 +19,12 @@ header {
 
 .title {
     font-family: 'Paprika', cursive;
-    font-size: 1.2em;
+    font-size: 2rem;
     color: #f1efeb;
     padding: .1em;
     text-shadow: 2px 2px 2px #000;
     margin: 0px;
-    /* border: 3px solid green;*/
+    /*border: 3px solid green;*/
 }
 
 .motto {
@@ -36,11 +33,13 @@ header {
     padding: .2em;
     /*border: 3px solid pink;*/
     font-weight: inherit;
+    display: block;
 }
 
 header img {
     padding: 5px;
     /*border: 3px solid yellow;*/
+    margin: 0;
 }
 
 
@@ -62,6 +61,7 @@ footer {
 .navigation li {
     width: 100%;
 }
+
 .navigation li a {
     display: block;
     color: #252119;
@@ -299,14 +299,17 @@ form legend {
     font-size: 1.25rem;
 }
 
-form label.top, form div {
+form label.top,
+form div {
     display: block;
     padding: 1rem;
     color: #172507;
     font-size: 1rem;
 }
 
-form label.top input, form label.top select, form label.top textarea {
+form label.top input,
+form label.top select,
+form label.top textarea {
     padding: .75rem;
     border-radius: 7px;
     display: block;
@@ -331,7 +334,8 @@ form input.submitButton {
     color: #f1efeb;
     font-size: 1.5rem;
     width: 100%;
-    max-width: 20rem;;
+    max-width: 20rem;
+    ;
 }
 
 form label.top input:required {
@@ -343,7 +347,22 @@ form label.top input:required:valid {
 }
 
 form label.top #ratingvalue {
-display: inline-block;
-text-align: right;
-margin-left: 12rem;
+    display: inline-block;
+    text-align: right;
+    margin-left: 12rem;
+}
+
+/* -------Thank You Page ----------*/
+
+.thankyou {
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    margin: 2rem;
+}
+
+.weatherthanks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 768px;
 }
