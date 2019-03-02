@@ -341,3 +341,9 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: 5px solid #668d3c;
 }
+
+form label.top #ratingvalue {
+display: inline-block;
+text-align: right;
+margin-left: 12rem;
+}
