@@ -62,5 +62,13 @@
         margin: .5rem;
         font-style: italic;
     }
+    form input.submitButton {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
 
+    form fieldset {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
 }

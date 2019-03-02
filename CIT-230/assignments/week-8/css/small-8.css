@@ -283,3 +283,61 @@ footer {
 .gallery figure img {
     width: 100%;
 }
+
+/* -------FORM----------*/
+
+form fieldset {
+    margin: 1.5rem;
+    border: 2px solid #212930;
+    border-radius: 7px;
+    padding: 1rem;
+}
+
+form legend {
+    margin: 0 3rem;
+    padding: 0 .5rem;
+    font-size: 1.25rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding: 1rem;
+    color: #172507;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select, form label.top textarea {
+    padding: .75rem;
+    border-radius: 7px;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #666;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #eee;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+}
+
+form input.submitButton {
+    margin: 1.5rem 3.5rem;
+    padding: 1rem;
+    border-radius: 7px;
+    border: 1px solid #212930;
+    background-color: #212930;
+    color: #f1efeb;
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 20rem;;
+}
+
+form label.top input:required {
+    border-left: 5px solid red;
+}
+
+form label.top input:required:valid {
+    border-left: 5px solid #668d3c;
+}
