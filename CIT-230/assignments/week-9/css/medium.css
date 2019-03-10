@@ -66,4 +66,17 @@
         margin-left: 5rem;
         margin-right: 5rem;
     }
+
+    #cityinfo a {
+        display: flex;
+        flex-direction: row;
+        max-width: 768px;
+    }
+
+    #cityinfo a:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+ 
+
 }

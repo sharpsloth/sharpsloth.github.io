@@ -8,7 +8,8 @@ request.onload = function () {
     let cities = citydata['towns'];
     cities.forEach(city => {
         if (city.name == "Preston" || city.name == "Fish Haven" || city.name == "Soda Springs") {
-            let citycard = document.createElement('article');
+            /*let citycard = document.createElement('article');*/
+            let citytext = document.createElement('div');
             let citylink = document.createElement('a');
             let cityname = document.createElement('h2');
             let citymotto = document.createElement('h3');
@@ -54,16 +55,19 @@ request.onload = function () {
             para3.appendChild(cityrainfall);
 
 
-            citylink.appendChild(citycard);
+            /*citylink.appendChild(citycard);*/
 
-            citycard.appendChild(cityname);
-            citycard.appendChild(citymotto);
-            citycard.appendChild(para1);
-            citycard.appendChild(para2);
-            citycard.appendChild(para3);
-            citycard.appendChild(cityimg);
+            citytext.appendChild(cityname);
+            citytext.appendChild(citymotto);
+            citytext.appendChild(para1);
+            citytext.appendChild(para2);
+            citytext.appendChild(para3);
 
-            citylink.appendChild(citycard);
+            /*citycard.appendChild(citytext);
+            citycard.appendChild(cityimg);*/
+
+            citylink.appendChild(citytext);
+            citylink.appendChild(cityimg);
 
             document.getElementById("cityinfo").appendChild(citylink);
         }
