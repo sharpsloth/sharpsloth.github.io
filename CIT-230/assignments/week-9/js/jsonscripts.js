@@ -12,31 +12,55 @@ request.onload = function () {
             let citylink = document.createElement('a');
             let cityname = document.createElement('h2');
             let citymotto = document.createElement('h3');
-            let cityyear = document.createElement('p');
-            let citypop = document.createElement('p');
-            let cityrainfall = document.createElement('p');
+            let cityyear = document.createElement('span');
+            let citypop = document.createElement('span');
+            let cityrainfall = document.createElement('span');
             let cityimg = document.createElement('img');
+            let para1= document.createElement('p');
+            let para2= document.createElement('p');
+            let para3= document.createElement('p');
+            let span1 = document.createElement('span');
+            let span2 = document.createElement('span');
+            let span3 = document.createElement('span');
+
+            span1.setAttribute('class', "citylabel");
+            span2.setAttribute('class', "citylabel");
+            span3.setAttribute('class', "citylabel");
 
             cityname.textContent = city.name;
-            citymotto.textContent = "Motto: " + city.motto;
-            cityyear.textContent = "Year Founded " + city.yearFounded;
+            citymotto.textContent = city.motto;
+            span1.textContent = "Year Founded: ";
+            cityyear.textContent = city.yearFounded;
+            span2.textContent = "Population: "
             let population = city.currentPopulation;
-            citypop.textContent = "Population: " + population.toLocaleString();
-            cityrainfall.textContent = "Annual Rainfall: " + city.averageRainfall;
-            cityimg.setAttribute('src', "images/" + city.name + "400.jpg");
-            cityimg.setAttribute('alt', "City of " + city.name);
+            citypop.textContent = population.toLocaleString();
+            span3.textContent = "Annual Rainfall: ";
+            cityrainfall.textContent = city.averageRainfall;
             let link = city.name;
             link = link.replace(/\s/g, '');
             let linkname= link.toLowerCase();
-            citylink.setAttribute('href', "https://sharpsloth.github.io/CIT-230/assignments/week-9/" + linkname + ".html")
+            cityimg.setAttribute('src', "images/" + linkname + "400.jpg");
+            cityimg.setAttribute('alt', "City of " + city.name);
+
+            citylink.setAttribute('href', "https://sharpsloth.github.io/CIT-230/assignments/week-9/" + linkname + ".html");
+
+            para1.appendChild(span1);
+            para1.appendChild(cityyear);
+
+            para2.appendChild(span2);
+            para2.appendChild(citypop);
+
+            para3.appendChild(span3);
+            para3.appendChild(cityrainfall);
+
 
             citylink.appendChild(citycard);
 
             citycard.appendChild(cityname);
             citycard.appendChild(citymotto);
-            citycard.appendChild(cityyear);
-            citycard.appendChild(citypop);
-            citycard.appendChild(cityrainfall);
+            citycard.appendChild(para1);
+            citycard.appendChild(para2);
+            citycard.appendChild(para3);
             citycard.appendChild(cityimg);
 
             citylink.appendChild(citycard);

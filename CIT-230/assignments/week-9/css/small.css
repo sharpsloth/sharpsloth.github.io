@@ -366,3 +366,14 @@ form label.top #ratingvalue {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     max-width: 768px;
 }
+
+/* ------ Homepage City Cards -------- */
+#cityinfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+#cityinfo.a {
+    color: black;
+    text-decoration: none;
+}
