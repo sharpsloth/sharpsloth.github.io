@@ -373,7 +373,7 @@ form label.top #ratingvalue {
     grid-template-columns: 1fr;
     padding: 0;
     margin: 1em auto;
-    }
+}
 
 #cityinfo a {
     color: black;
@@ -402,6 +402,7 @@ form label.top #ratingvalue {
     margin: 0;
     vertical-align: bottom;
 }
+
 #cityinfo h3 {
     font-size: 1rem;
     padding: .2em 1em;

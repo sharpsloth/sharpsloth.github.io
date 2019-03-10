@@ -17,9 +17,9 @@ request.onload = function () {
             let citypop = document.createElement('span');
             let cityrainfall = document.createElement('span');
             let cityimg = document.createElement('img');
-            let para1= document.createElement('p');
-            let para2= document.createElement('p');
-            let para3= document.createElement('p');
+            let para1 = document.createElement('p');
+            let para2 = document.createElement('p');
+            let para3 = document.createElement('p');
             let span1 = document.createElement('span');
             let span2 = document.createElement('span');
             let span3 = document.createElement('span');
@@ -39,7 +39,7 @@ request.onload = function () {
             cityrainfall.textContent = city.averageRainfall;
             let link = city.name;
             link = link.replace(/\s/g, '');
-            let linkname= link.toLowerCase();
+            let linkname = link.toLowerCase();
             cityimg.setAttribute('src', "images/" + linkname + "400.jpg");
             cityimg.setAttribute('alt', "City of " + city.name);
 
