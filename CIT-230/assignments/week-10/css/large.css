@@ -1,0 +1,30 @@
+@media only screen and (min-width: 45em) {
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery figure:hover {
+        box-shadow: 0 0 10px 10px #999;
+    }
+
+    form input.submitButton {
+        margin-left: 12rem;
+        margin-right: 10rem;
+    }
+
+    form fieldset {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    #cityinfo {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2em;
+    }
+
+    #cityinfo a {
+        display: block;
+        max-width: 32.5em;
+    }
+}
