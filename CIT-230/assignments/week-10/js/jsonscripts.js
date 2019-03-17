@@ -6,6 +6,7 @@ request.send();
 request.onload = function () {
     let citydata = request.response;
     let cities = citydata['towns'];
+    console.log(cities);
     cities.forEach(city => {
         if (city.name == "Preston" || city.name == "Fish Haven" || city.name == "Soda Springs") {
             /*let citycard = document.createElement('article');*/

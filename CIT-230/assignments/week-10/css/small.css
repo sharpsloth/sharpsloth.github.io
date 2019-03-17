@@ -114,6 +114,10 @@ footer {
 
 }
 
+#current {
+    text-transform: capitalize;
+}
+
 .cityimage {
     width: 100%;
     margin: 0 auto;
@@ -125,9 +129,9 @@ footer {
     top: 1rem;
     left: 1rem;
     border: 2px solid #212930;
-    box-shadow: 10px 10px 10px #21293021;
+    box-shadow: 10px 10px 10px #2129304d;
     border-radius: 5px;
-    background-color: #212930a8;
+    background-color: #212930cb;
     padding: 1rem;
     line-height: 1.2em;
     letter-spacing: .12em;
@@ -136,10 +140,11 @@ footer {
 .summary h3 {
     color: #f1efeb;
     text-align: center;
-    font-weight: inherit;
+    font-weight: bolder;
     line-height: 1.7em;
     font-size: 1.5em;
-    text-decoration-line: underline;
+    text-decoration-line: none;
+    font-family: Paprika;
 }
 
 .summarydetails {
@@ -158,7 +163,7 @@ footer {
 .value {
     text-align: left;
     color: #f8e917;
-    display: inline-block;
+    display: inline;
     width: 50%;
 
 }
@@ -265,6 +270,16 @@ footer {
     text-align: center;
     margin: 0 auto;
     padding: 1em;
+}
+
+footer a {
+    color: #f1efeb;
+    text-decoration: none;
+}
+
+footer a img {
+    height: 12px;
+    width: auto;
 }
 
 .gallery {

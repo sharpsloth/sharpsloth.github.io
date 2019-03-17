@@ -41,11 +41,15 @@
             <div class="summary">
                 <h3>Weather Summary</h3>
                 <div class="summarydetails">
-                    <span class="label">Currently:</span><span class="value">Sunny</span><br>
-                    <span class="label">High:</span><span class="value"><span id="temp">40</span> &deg;F</span><br>
-                    <span class="label">Wind Chill:</span><span class="value"><span id="windchill"></span> &deg;F</span><br>
-                    <span class="label">Humidity:</span><span class="value">70%</span><br>
-                    <span class="label">Wind Speed:</span><span class="value"><span id="speed">3</span> mph</span>
+                    <span class="label">Currently: </span> <span class="value" id="current"></span><br>
+                    <span class="label">High: </span>
+                    <span class="value"><span id="temp"></span> &deg;F</span><br>
+                    <span class="label">Wind Chill: </span>
+                    <span class="value"><span id="windchill"></span> &deg;F</span><br>
+                    <span class="label">Humidity: </span>
+                    <span class="value"><span id="humidity"></span>%</span><br>
+                    <span class="label">Wind Speed: </span>
+                    <span class="value"><span id="speed"></span> mph</span>
                 </div>
             </div>
         </div>
@@ -53,25 +57,25 @@
             <h4>5 Day Forecast</h4>
             <table class="forecasttable">
                 <tr>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
+                    <th id="1day"></th>
+                    <th id="2day"></th>
+                    <th id="3day"></th>
+                    <th id="4day"></th>
+                    <th id="5day"></th>
                 </tr>
                 <tr class="forecasticon">
-                    <td><img src="images/weathericons/sun.png" alt="sunny"></td>
-                    <td><img src="images/weathericons/partlycloudy.png" alt="partly cloudy"></td>
-                    <td><img src="images/weathericons/sun.png" alt="sunny"></td>
-                    <td><img src="images/weathericons/storm.png" alt="thunderstorm"></td>
-                    <td><img src="images/weathericons/rain.png" alt="rainy"></td>
+                    <td><img id="1icon"></td>
+                    <td><img id="2icon"></td>
+                    <td><img id="3icon"></td>
+                    <td><img id="4icon"></td>
+                    <td><img id="5icon"></td>
                 </tr>
                 <tr class="temperature">
-                    <td>72 &deg;F</td>
-                    <td>68 &deg;F</td>
-                    <td>70 &deg;F</td>
-                    <td>66 &deg;F</td>
-                    <td>69 &deg;F</td>
+                    <td><span id ="1temp"></span> &deg;F</td>
+                    <td><span id ="2temp"></span> &deg;F</td>
+                    <td><span id ="3temp"></span> &deg;F</td>
+                    <td><span id ="4temp"></span> &deg;F</td>
+                    <td><span id ="5temp"></span> &deg;F</td>
 
                 </tr>
             </table>
@@ -96,6 +100,10 @@
 
             </div>
         </article>
+        <article>
+                <h4>Preston Events</h4>
+                    <div class="article" id="events"></div>
+            </article>
         <div class="contact">
             <img id="map" src="images/prestonmap.png" alt="map of Preston">
             <div class="contactinfo">
@@ -114,14 +122,18 @@
         </div>
     </main>
     <footer>
-        <span>&copy; Gem State Weather | Clarisse Mendenhall</span><br>
+        <span>&copy; Gem State Weather | <a href="https://openweathermap.org/" target="blank">Open Weather Map <img src="images/contacticons/new-tab-light.png"></a> | Clarisse
+            Mendenhall</span><br>
         <span id="date"></span>
 
     </footer>
 
     <script src="js/togglemenu.js"></script>
     <script src="js/currentdate.js"></script>
+    <script src="js/cityweather.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/weatherforecast.js"></script>
+    <script src="js/events.js"></script>
 
 
 </body>
