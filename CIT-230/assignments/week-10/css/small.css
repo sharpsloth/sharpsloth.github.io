@@ -101,11 +101,11 @@ footer {
     font-family: roboto, sans-serif;
     text-align: center;
     margin: 15px auto;
-    font-size: 1rem;
+    font-size: 2.25rem;
     font-weight: bold;
     background-color: #668d3c;
     color: #f1efeb;
-    padding: .5em;
+    padding: .25em;
 }
 
 .weathersummary {
@@ -181,16 +181,21 @@ footer {
 
 .fivedayforecast h4 {
     padding: 10px;
+    font-family: paprika;
+    font-size: 1.5em;
 }
 
 .forecasttable {
     border: 1px solid #212930;
-    column-width: 100px;
+    /*column-width: 100px;*/
+    width: 100%;
+    background-color: #212930cb;
+    color: #f1efeb;
+    font-size: 1.2em;
 }
 
 .forecasttable th {
-    border-bottom: 1px solid #212930;
-    font-size: 1em;
+    font-size: 1.5em;
     padding: 3px;
     width: 20%;
 
@@ -198,7 +203,7 @@ footer {
 
 article h4,
 article h5 {
-    font-family: roboto, sans-serif;
+    font-family: paprika, sans-serif;
     padding: 5px;
 }
 

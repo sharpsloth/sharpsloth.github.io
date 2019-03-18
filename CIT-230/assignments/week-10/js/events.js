@@ -10,15 +10,16 @@ request.onload = function () {
     console.log(citylocation);
     if (citylocation.includes('preston') = true) {
         let cityname = "Preston";
-    } else if (x.includes('sodasprings') = true) {
+    } else if (citylocation.includes('sodasprings') = true) {
         let cityname = "Soda Springs";
     } else {
         let cityname = "Fish Haven";
     }
     */
+   let cityname = "Preston";
     let cityEvents = document.createElement('ul');
     for (i = 0; i < cities.length; i++) {
-        let cityname = "Preston";
+
         if (cities[i].name = cityname) {
             var event = cities[i].events;
             for (let j = 0; j < event.length; j++) {
