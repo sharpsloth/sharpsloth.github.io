@@ -1,13 +1,17 @@
-let x = document.referrer;
-if (x.includes('preston') == true) {
-    let cityId = 5604473;
-} else if (x.includes('sodasprings') == true) {
-    let cityId = 5678757;
+/*let x = document.referrer;
+let cityID = "";
+if (x.search('preston') !== '-1') {
+    cityId = "5604473";
+} else if (x.search('sodasprings') !== '-1') {
+    cityId = "5678757";
 } else {
-    let cityId = 4406831;
+    cityId = "4406831";
 }
 
-let apiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=" + cityID + "&units=imperial&APPID=33581bcc8782f6905e49131b62e95192"
+let apiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=" + cityID + "&units=imperial&APPID=33581bcc8782f6905e49131b62e95192"*/
+
+let apiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=33581bcc8782f6905e49131b62e95192"
+
 let weatherRequest = new XMLHttpRequest();
 weatherRequest.open('GET', apiURLstring, true);
 weatherRequest.send();

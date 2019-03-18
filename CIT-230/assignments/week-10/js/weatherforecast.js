@@ -42,19 +42,19 @@ forecastRequest.onload = function () {
     temp5.textContent = forecastTemp[4];
 
     let icon1 = document.getElementById("1icon");
-    icon1.setAttribute("src", "http://openweathermap.org/img/w/" + forecastIcon[0] + ".png");
+    icon1.setAttribute("src", "https://openweathermap.org/img/w/" + forecastIcon[0] + ".png");
     icon1.setAttribute("alt", forecastAlt[0]);
     let icon2 = document.getElementById("2icon");
-    icon2.setAttribute("src", "http://openweathermap.org/img/w/" + forecastIcon[1] + ".png");
+    icon2.setAttribute("src", "https://openweathermap.org/img/w/" + forecastIcon[1] + ".png");
     icon2.setAttribute("alt", forecastAlt[1]);
     let icon3 = document.getElementById("3icon");
-    icon3.setAttribute("src", "http://openweathermap.org/img/w/" + forecastIcon[2] + ".png");
+    icon3.setAttribute("src", "https://openweathermap.org/img/w/" + forecastIcon[2] + ".png");
     icon3.setAttribute("alt", forecastAlt[2]);
     let icon4 = document.getElementById("4icon");
-    icon4.setAttribute("src", "http://openweathermap.org/img/w/" + forecastIcon[3] + ".png");
+    icon4.setAttribute("src", "https://openweathermap.org/img/w/" + forecastIcon[3] + ".png");
     icon4.setAttribute("alt", forecastAlt[3]);
     let icon5 = document.getElementById("5icon");
-    icon5.setAttribute("src", "http://openweathermap.org/img/w/" + forecastIcon[4] + ".png");
+    icon5.setAttribute("src", "https://openweathermap.org/img/w/" + forecastIcon[4] + ".png");
     icon5.setAttribute("alt", forecastAlt[4]);
 }
 
