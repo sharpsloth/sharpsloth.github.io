@@ -1,15 +1,13 @@
-const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json"
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json" 
 const request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
-request.send();
-request.onload = function () {
+request.send()
+request.onload = function () { 
     let citydata = request.response;
     let cities = citydata['towns'];
-    console.log(cities);
     cities.forEach(city => {
         if (city.name == "Preston" || city.name == "Fish Haven" || city.name == "Soda Springs") {
-            /*let citycard = document.createElement('article');*/
             let citytext = document.createElement('div');
             let citylink = document.createElement('a');
             let cityname = document.createElement('h2');
@@ -55,17 +53,12 @@ request.onload = function () {
             para3.appendChild(span3);
             para3.appendChild(cityrainfall);
 
-
-            /*citylink.appendChild(citycard);*/
-
             citytext.appendChild(cityname);
             citytext.appendChild(citymotto);
             citytext.appendChild(para1);
             citytext.appendChild(para2);
             citytext.appendChild(para3);
 
-            /*citycard.appendChild(citytext);
-            citycard.appendChild(cityimg);*/
 
             citylink.appendChild(citytext);
             citylink.appendChild(cityimg);

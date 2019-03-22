@@ -303,6 +303,7 @@ article p {
 
 .contact article .name li {
     font-weight: normal;
+    text-indent: 2em;
 }
 .smallicon {
     border: none;
