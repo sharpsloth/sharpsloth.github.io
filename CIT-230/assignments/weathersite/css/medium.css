@@ -1,0 +1,85 @@
+@media only screen and (min-width: 32.5em) {
+
+    .navigation {
+        flex-flow: row nowrap;
+        align-items: stretch;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        width: 100%;
+    }
+
+    .fivedayforecast {
+        display: block;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    article img {
+        float: right;
+        margin-left: 15px;
+    }
+
+    .contact {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+
+    #map {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .contactinfo {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+
+    .contact article {
+        grid-row-start: 1;
+        grid-column-start: 3;
+    }
+
+    .gallery {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .gallery figure {
+        padding: 1rem;
+        margin: .5rem;
+        font-style: italic;
+    }
+
+    form input.submitButton {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    form fieldset {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    #cityinfo a {
+        display: flex;
+        flex-direction: row;
+        max-width: 768px;
+    }
+
+    #cityinfo a:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+
+
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem State Weather | Your local weather source</title>
+    <meta name="description" content="Local weather, events, and information for southeast Idaho. Serving Preston, Soda Springs and Fish Haven">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Paprika%7CRoboto" rel="stylesheet">
+    <link rel="icon" href="images/weathericon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/weatherlogo.png" alt="Gem State Weather logo">
+        <h1 class="title">Gem State Weather
+            <span class="motto">Southeastern Idaho weather and more</span></h1>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Menu" onclick="togglemenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="thankyou">Thank You for your storm data!</h2>
+        <div class="weatherthanks">
+            <img src="images/weathericons/snowflake.png">
+            <img src="images/weathericons/storm.png">
+            <img src="images/weathericons/sun.png">
+            <img src="images/weathericons/rain.png">
+            <img src="images/weathericons/partlycloudy.png">
+
+        </div>
+
+
+
+
+        <div class="contact">
+            <img id="map" src="images/prestonmap.png" alt="map of Preston">
+            <div class="contactinfo">
+                <p>
+                    <strong>Gem State Weather</strong><br>
+                    <img class="smallicon" src="images/contacticons/locationicon.png" alt="location icon">1447 East 800
+                    North Road<br>
+                    Preston, ID 83263<br>
+                    &phone; (555)555-5555<br>
+                    &#9993; xxx&#64;xxx.xxx<br><br>
+                    <img class="smallicon" src="images/contacticons/facebook.png" alt="facebook icon">&nbsp;
+                    <img class="smallicon" src="images/contacticons/instagram.png" alt="instagram icon">&nbsp;
+                    <img class="smallicon" src="images/contacticons/twitter.png" alt="twitter icon">&nbsp;
+                    <img class="smallicon" src="images/contacticons/whatsapp.png" alt="whatsapp icon"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+            <span>&copy; Gem State Weather | <a href="https://openweathermap.org/" target="blank">Open Weather Map <img src="images/contacticons/new-tab-light.png"></a> | Clarisse Mendenhall</span><br>
+            <span id="date"></span>
+        </footer>
+
+    <script src="js/togglemenu.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/adjustRating.js"></script>
+
+
+</body>
+
+</html>

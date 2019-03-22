@@ -6,21 +6,18 @@ request.send();
 request.onload = function () {
     let citydata = request.response;
     let cities = citydata['towns'];
-    /*let citylocation = document.referrer;
+    let citylocation = document.title;
     console.log(citylocation);
-    if (citylocation.includes('preston') = true) {
-        let cityname = "Preston";
-    } else if (citylocation.includes('sodasprings') = true) {
-        let cityname = "Soda Springs";
-    } else {
-        let cityname = "Fish Haven";
+    let cityname = 'Fish Haven';
+    if (citylocation.includes('Preston') == true) {
+        cityname = "Preston";
+    } else if (citylocation.includes('Soda Springs') == true) {
+        cityname = "Soda Springs";
     }
-    */
-   let cityname = "Preston";
     let cityEvents = document.createElement('ul');
     for (i = 0; i < cities.length; i++) {
 
-        if (cities[i].name = cityname) {
+        if (cities[i].name == cityname) {
             var event = cities[i].events;
             for (let j = 0; j < event.length; j++) {
                 let listItem = document.createElement('li');

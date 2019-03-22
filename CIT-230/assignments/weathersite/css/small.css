@@ -2,6 +2,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    color: #212930;
 }
 
 body {
@@ -102,11 +103,11 @@ footer {
     font-family: roboto, sans-serif;
     text-align: center;
     margin: 15px auto;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: bold;
     background-color: #668d3c;
-    color: #f1efeb;
     padding: .25em;
+    color: #f1efeb;
 }
 
 .weathersummary {
@@ -153,6 +154,10 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 
+.summarydetails .value span {
+    color: #f8e917;
+}
+
 .label {
     color: #f1efeb;
     display: inline;
@@ -181,8 +186,7 @@ footer {
 
 .fivedayforecast h4 {
     padding: 10px;
-    font-family: paprika;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 .forecasttable {
@@ -198,7 +202,11 @@ footer {
     font-size: 1em;
     padding: 3px;
     width: 20%;
+    color: #f1efeb;
+}
 
+.temperature td, .temperature span {
+    color: #f1efeb;
 }
 
 article h4,
@@ -213,7 +221,6 @@ article h4 {
 
 article h5 {
     font-size: .75em;
-    color: #172507;
 }
 
 article img {
@@ -222,8 +229,6 @@ article img {
     display: block;
     margin: 10px auto;
     box-shadow: 0 0 10px 5px #777;
-
-
 }
 
 article {
@@ -240,14 +245,14 @@ article p {
 .contact {
     background-color: #668d3c;
     margin: 15px auto 0px;
-    padding: 10px;
+    padding: .5em;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
 .contact a {
     text-decoration: none;
-    color: black;
+    color:#212930;
 }
 
 .contactinfo a img {
@@ -255,25 +260,49 @@ article p {
 }
 
 #map {
-    max-width: 200px;
+    max-width: 150px;
     display: inline-block;
     border: 2px solid #212930;
     grid-row-start: 1;
-    margin: 0 auto;
 }
 
 .contactinfo {
     grid-row-start: 2;
     display: inline-block;
-    padding: 10px;
-    margin: 0 auto;
+    margin: 0 1em;
     /*border: 3px solid yellow;*/
 }
 
-.contact article {
+.contactinfo h4 {
+    font-size: 1.25em;
+}
+
+.eventarticle {
     border: none;
     display: inline-block;
     grid-row-start: 3;
+    margin: 0;
+    padding: 0;
+}
+
+.eventarticle h4 {
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    font-size: 1.25em;
+}
+
+.contact article ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact article .name {
+    font-weight: bold;
+}
+
+.contact article .name li {
+    font-weight: normal;
 }
 .smallicon {
     border: none;
@@ -288,6 +317,10 @@ footer {
     text-align: center;
     margin: 0 auto;
     padding: 1em;
+}
+
+footer span {
+    color: #f1efeb;
 }
 
 footer a {
@@ -409,7 +442,7 @@ form label.top #ratingvalue {
 }
 
 #cityinfo a {
-    color: black;
+    color: #212930;
     background-color: #668d3c79;
     border: 4px solid #212930;
     box-shadow: 0px 0px 10px 5px #aaa;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gem State Weather | Your local weather source | Preston</title>
+    <title>Gem State Weather | Your local weather source | Soda Springs</title>
     <meta name="description" content="Local weather, events, and information for southeast Idaho. Serving Preston, Soda Springs and Fish Haven">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -23,33 +23,29 @@
     <nav>
         <ul class="navigation">
             <li><a href="#" title="Menu" onclick="togglemenu()">&#9776; Menu</a></li>
-            <li><a href="https://sharpsloth.github.io/CIT-230/assignments/week-10/index.html">Home</a></li>
-            <li><a class="active" href="#l">Preston</a></li>
-            <li><a href="https://sharpsloth.github.io/CIT-230/assignments/week-10/sodasprings.html">Soda Springs</a></li>
-            <li><a href="https://sharpsloth.github.io/CIT-230/assignments/week-10/fishhaven.html">Fish Haven</a></li>
-            <li><a href="https://sharpsloth.github.io/CIT-230/assignments/week-10/stormcenter.html">Storm Center</a></li>
-            <li><a href="https://sharpsloth.github.io/CIT-230/assignments/week-10/gallery.html">Gallery</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a class="active" href="#">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h2 class="cityname">Preston, Idaho</h2>
+        <h2 class="cityname">Soda Springs, Idaho</h2>
         <div class="weathersummary">
-            <img class="cityimage" src="images/preston900.jpg" sizes="100vw" alt="farmland in Preston, ID" srcset="images/preston400.jpg 400w, 
-            images/preston650.jpg 650w,
-            images/preston900.jpg 900w">
+            <img class="cityimage" src="images/sodasprings900.jpg" sizes="100vw" alt="City of Soda Springs, ID" srcset="images/sodasprings400.jpg 400w, 
+            images/sodasprings650.jpg 650w,
+            images/sodasprings900.jpg 900w">
             <!--<img class="cityimage" src="images/preston.jpg" alt="Preston, ID">-->
             <div class="summary">
                 <h3>Weather Summary</h3>
                 <div class="summarydetails">
-                    <span class="label">Currently: </span> <span class="value" id="current"></span>
-                    <span class="label">High: </span>
-                    <span class="value"><span id="temp"></span> &deg;F</span>
-                    <span class="label">Wind Chill: </span>
-                    <span class="value"><span id="windchill"></span> &deg;F</span>
-                    <span class="label">Humidity: </span>
-                    <span class="value"><span id="humidity"></span>%</span>
-                    <span class="label">Wind Speed: </span>
-                    <span class="value"><span id="speed"></span> mph</span>
+                    <span class="label">Currently:</span><span class="value">Sunny</span><br>
+                    <span class="label">High:</span><span class="value"><span id="temp">40</span> &deg;F</span><br>
+                    <span class="label">Wind Chill:</span><span class="value"><span id="windchill"></span> &deg;F</span><br>
+                    <span class="label">Humidity:</span><span class="value">70%</span><br>
+                    <span class="label">Wind Speed:</span><span class="value"><span id="speed">3</span> mph</span>
                 </div>
             </div>
         </div>
@@ -57,25 +53,25 @@
             <h4>5 Day Forecast</h4>
             <table class="forecasttable">
                 <tr>
-                    <th id="1day"></th>
-                    <th id="2day"></th>
-                    <th id="3day"></th>
-                    <th id="4day"></th>
-                    <th id="5day"></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
                 </tr>
                 <tr class="forecasticon">
-                    <td><img id="1icon"></td>
-                    <td><img id="2icon"></td>
-                    <td><img id="3icon"></td>
-                    <td><img id="4icon"></td>
-                    <td><img id="5icon"></td>
+                    <td><img src="images/weathericons/sun.png" alt="sunny"></td>
+                    <td><img src="images/weathericons/partlycloudy.png" alt="partly cloudy"></td>
+                    <td><img src="images/weathericons/sun.png" alt="sunny"></td>
+                    <td><img src="images/weathericons/storm.png" alt="thunderstorm"></td>
+                    <td><img src="images/weathericons/rain.png" alt="rainy"></td>
                 </tr>
                 <tr class="temperature">
-                    <td><span id ="1temp"></span> &deg;F</td>
-                    <td><span id ="2temp"></span> &deg;F</td>
-                    <td><span id ="3temp"></span> &deg;F</td>
-                    <td><span id ="4temp"></span> &deg;F</td>
-                    <td><span id ="5temp"></span> &deg;F</td>
+                    <td>72 &deg;F</td>
+                    <td>68 &deg;F</td>
+                    <td>70 &deg;F</td>
+                    <td>66 &deg;F</td>
+                    <td>69 &deg;F</td>
 
                 </tr>
             </table>
@@ -100,39 +96,31 @@
 
             </div>
         </article>
-   
         <div class="contact">
             <img id="map" src="images/prestonmap.png" alt="map of Preston">
             <div class="contactinfo">
                 <p>
                     <strong>Gem State Weather</strong><br>
-                    <img class="smallicon" src="images/contacticons/locationicon.png" alt="location icon"><a href="https://goo.gl/maps/FSrCWexFKpn" target="blank">1447 East 800 North Road<br>Preston, ID 83263 <img src="images/contacticons/new-tab-black.png"></a><br>
+                    <img class="smallicon" src="images/contacticons/locationicon.png" alt="location icon">1447 East 800
+                    North Road<br>
+                    Preston, ID 83263<br>
                     &phone; (555)555-5555<br>
-                    &#9993; admin&#64;gemstateweather.com<br><br>
+                    &#9993; xxx&#64;xxx.xxx<br><br>
                     <img class="smallicon" src="images/contacticons/facebook.png" alt="facebook icon">&nbsp;
                     <img class="smallicon" src="images/contacticons/instagram.png" alt="instagram icon">&nbsp;
                     <img class="smallicon" src="images/contacticons/twitter.png" alt="twitter icon">&nbsp;
                     <img class="smallicon" src="images/contacticons/whatsapp.png" alt="whatsapp icon"></p>
             </div>
-            <article>
-                <h4>Preston Events</h4>
-                    <div class="article" id="events"></div>
-            </article>
         </div>
     </main>
     <footer>
-        <span>&copy; Gem State Weather | <a href="https://openweathermap.org/" target="blank">Open Weather Map <img src="images/contacticons/new-tab-light.png"></a> | Clarisse
-            Mendenhall</span><br>
-        <span id="date"></span>
-
-    </footer>
+            <span>&copy; Gem State Weather | <a href="https://openweathermap.org/" target="blank">Open Weather Map <img src="images/contacticons/new-tab-light.png"></a> | Clarisse Mendenhall</span><br>
+            <span id="date"></span>
+        </footer>
 
     <script src="js/togglemenu.js"></script>
     <script src="js/currentdate.js"></script>
-    <script src="js/cityweather.js"></script>
     <script src="js/windchill.js"></script>
-    <script src="js/weatherforecast.js"></script>
-    <script src="js/events.js"></script>
 
 
 </body>
