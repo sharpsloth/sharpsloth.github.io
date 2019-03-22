@@ -42,7 +42,7 @@ request.onload = function () {
             cityimg.setAttribute('src', "images/" + linkname + "400.jpg");
             cityimg.setAttribute('alt', "City of " + city.name);
 
-            citylink.setAttribute('href', "https://sharpsloth.github.io/CIT-230/assignments/week-10/" + linkname + ".html");
+            citylink.setAttribute('href', linkname + ".html");
 
             para1.appendChild(span1);
             para1.appendChild(cityyear);
