@@ -155,7 +155,7 @@ footer {
 }
 
 .summarydetails .value span {
-    color: rgb(248,233,23);
+    color: rgb(255, 202, 40);
 }
 
 .label {
@@ -167,7 +167,7 @@ footer {
 }
 
 .value {
-    color: rgb(248,233,23);
+    color: rgb(255, 202, 40);
     display: inline;
     grid-column-start: 2;
     margin: 0;
@@ -418,7 +418,7 @@ form input.submitButton {
 }
 
 form label.top input:required {
-    border-left: 5px solid red;
+    border-left: 5px solid rgb(255,0,0);
 }
 
 form label.top input:required:valid {
