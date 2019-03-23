@@ -7,7 +7,7 @@
 h4 {
     font-size: 1.25em;
     padding: .25em 0;
-    font-family: paprika, sans-serif;
+    font-family: 'Paprika', cursive;
     }
 
 
@@ -21,14 +21,14 @@ header {
 
 .title {
     font-family: 'Paprika', cursive;
-    font-size: 2rem;
+    font-size: 2em;
     color: rgb(241,239,235);
     padding: .1em;
     margin: 0;
 }
 
 .motto {
-    font-size: .9rem;
+    font-size: .5em;
     color: rgb(241,239,235);
     padding: .2em;
     font-weight: inherit;
@@ -63,9 +63,9 @@ footer {
 .navigation li a {
     display: block;
     color: rgb(33,41,48);
-    padding: .75rem 0;
+    padding: .75em 0;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1em;
     height: 100%;
 }
 
@@ -75,7 +75,7 @@ footer {
 }
 
 .navigation li a:hover:not(.active) {
-    background-color: rgb(52,193,92);
+    background-color: rgb(52,103,92);
     background-color: rgba(52,103,92,0.5);
     font-weight: 700;
 }
@@ -97,10 +97,10 @@ footer {
 }
 
 .cityname {
-    font-family: roboto, sans-serif;
+    font-family: Roboto, sans-serif;
     text-align: center;
     margin: 15px auto;
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: bold;
     background-color: rgb(52,103,92);
     padding: .25em;
@@ -124,14 +124,14 @@ footer {
 
 .summary {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 1em;
+    left: 1em;
     border: 2px solid rgb(33,41,48);
     box-shadow: 0 0 10px 5px rgba(33,41,48,0.3);
     border-radius: 5px;
-    background-color: rgb(33,41,48,);
+    background-color: rgb(33,41,48);
     background-color: rgba(33,41,48,0.8);
-    padding: .3rem;
+    padding: .3em;
     line-height: 1.2em;
     letter-spacing: .12em;
 }
@@ -143,7 +143,7 @@ h3 {
     line-height: 1.7em;
     font-size: 1.25em;
     text-decoration-line: none;
-    font-family: Paprika;
+    font-family: 'Paprika', cursive;
 }
 
 .summarydetails {
@@ -162,12 +162,14 @@ h3 {
     display: inline;
     grid-column-start: 1;
     text-align: right;
+    margin: 0 .25em;
 }
 
 .value {
     color: rgb(255, 202, 40);
     display: inline;
     grid-column-start: 2;
+    margin: 0 .25em;
 }
 
 .fivedayforecast {
@@ -203,7 +205,7 @@ h3 {
 }
 
 h5 {
-    font-family: paprika, sans-serif;
+    font-family: 'Paprika', cursive;
     padding: 5px;
     font-size: .75em;
 }
@@ -218,7 +220,7 @@ article img {
 
 article {
     background-color: rgb(52,103,92);
-    background-color: rgba(52,103,92, 0.5);
+    background-color: rgba(52,103,92,0.5);
     padding: 20px;
     margin: 15px auto;
     border: 1px solid rgb(33,41,48);
@@ -305,6 +307,7 @@ footer {
     color: rgb(241,239,235);
     text-align: center;
     padding: 1em;
+    width: 100%;
 }
 
 footer span {
@@ -328,8 +331,8 @@ footer a img {
 }
 
 .gallery figure {
-    padding: 1rem;
-    margin: .5rem;
+    padding: 1em;
+    margin: .5em;
     font-style: italic;
     box-shadow: 0 0 10px 5px rgb(221,221,221);
 }
@@ -347,7 +350,7 @@ form {
 
 }
 form fieldset {
-    padding: 1rem;
+    padding: 1em;
     border: none;
     display: grid;
     grid-template-rows: auto;
@@ -357,8 +360,8 @@ form fieldset {
 }
 
 form legend {
-    padding: .75rem;
-    font-size: 1.25rem;
+    padding: .75em;
+    font-size: 1.25em;
     color: rgb(241,239,235);
     font-weight: bolder; 
     background-color: rgb(52,103,92);
@@ -375,16 +378,16 @@ form label.sbs input {
 
 form label.top,
 form div {
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 1em;
+    font-size: 1em;
 }
 
 form label.top input,
 form label.top select,
 form label.top textarea {
-    padding: .75rem;
+    padding: .75em;
     border-radius: 7px;
-    font-size: 1rem;
+    font-size: 1em;
     border: 1px solid rgb(33,41,48);
     background-color: rgb(241,239,235);
     display: block;
@@ -392,12 +395,12 @@ form label.top textarea {
 }
 
 .submitButton {
-    padding: 1rem;
+    padding: 1em;
     border-radius: 7px;
     border: 1px solid rgb(33,41,48);
     background-color: rgb(33,41,48);
     color: rgb(241,239,235);
-    font-size: 1.25rem;
+    font-size: 1.25em;
     width: 50%;
     margin: 0 auto;
     white-space: normal;
@@ -414,17 +417,17 @@ form label.top input:required:valid {
 form label.top #ratingvalue {
     display: inline-block;
     text-align: right;
-    margin-right: 1rem;
+    margin-right: 1em;
     width: 40%;
 }
 
 /* -------Thank You Page ----------*/
 
 .thankyou {
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: normal;
     text-align: center;
-    margin: 2rem;
+    margin: 2em;
 }
 
 .weatherthanks {
@@ -458,9 +461,9 @@ form label.top #ratingvalue {
 #cityinfo h2 {
     font-family: 'Paprika', cursive;
     padding: .2em;
-    text-shadow: 2px 2px 2px rgb(33,41,48);
+    text-shadow: 0 0 2px rgb(33,41,48);
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 #cityinfo img {
@@ -470,7 +473,7 @@ form label.top #ratingvalue {
 }
 
 .info {
-    font-size: 1rem;
+    font-size: 1em;
     padding: .2em 1em;
     font-style: italic;
 }
@@ -485,6 +488,6 @@ form label.top #ratingvalue {
 
 .mottoh3 {
     color: rgb(33,41,48);
-    font-family: roboto, sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 1em;
 }
