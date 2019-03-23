@@ -1,9 +1,9 @@
 let x = document.title;
 let cityID = "4406831";
 if (x.includes("Preston") == true) {
-    cityId = "5604473";
+    cityID = "5604473";
 } else if (x.includes("Soda Springs") == true) {
-    cityId = "5678757";
+    cityID = "5678757";
 }
 
 let apiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=" + cityID + "&units=imperial&APPID=33581bcc8782f6905e49131b62e95192"
