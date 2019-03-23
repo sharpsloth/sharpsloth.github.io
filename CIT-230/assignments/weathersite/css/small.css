@@ -2,7 +2,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
-    color: rgba(33,41,48);
+    color: rgb(33,41,48);
 }
 h4 {
     font-size: 1.25em;
@@ -12,7 +12,7 @@ h4 {
 
 
 header {
-    background-color: rgba(33,41,48);
+    background-color: rgb(33,41,48);
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -62,7 +62,7 @@ footer {
 
 .navigation li a {
     display: block;
-    color: rgba(33,41,48);
+    color: rgb(33,41,48);
     padding: .75rem 0;
     text-decoration: none;
     font-size: 1rem;
@@ -75,7 +75,7 @@ footer {
 }
 
 .navigation li a:hover:not(.active) {
-    background-color: rgb(52,103,92,0.5);
+    background-color: rgba(52,103,92,0.5);
     font-weight: 700;
 }
 
@@ -125,7 +125,7 @@ footer {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    border: 2px solid rgba(33,41,48);
+    border: 2px solid rgb(33,41,48);
     box-shadow: 0 0 10px 5px rgba(33,41,48,0.3);
     border-radius: 5px;
     background-color: rgba(33,41,48,0.8);
@@ -182,7 +182,7 @@ footer {
 }
 
 .forecasttable {
-    border: 1px solid rgba(33,41,48);
+    border: 1px solid rgb(33,41,48);
     /*column-width: 100px;*/
     width: 100%;
     background-color: rgba(33,41,48,0.8);
@@ -219,10 +219,10 @@ article img {
 }
 
 article {
-    background-color: rgb(52,103,92, 0.5);
+    background-color: rgba(52,103,92, 0.5);
     padding: 20px;
     margin: 15px auto;
-    border: 1px solid rgba(33,41,48);
+    border: 1px solid rgb(33,41,48);
 }
 
 article p {
@@ -248,7 +248,7 @@ article p {
 
 .contact h4 {
     color: rgb(241,239,235);
-    text-shadow: 0 0 5px rgba(33,41,48);
+    text-shadow: 0 0 5px rgb(33,41,48);
 }
 
 .contactinfo a img {
@@ -258,7 +258,6 @@ article p {
 .map {
     max-width: 150px;
     display: inline-block;
-    /*border: 2px solid rgba(33,41,48);*/
     grid-row-start: 1;
 }
 
@@ -266,7 +265,6 @@ article p {
     grid-row-start: 2;
     display: inline-block;
     margin: 0 1em;
-    /*border: 3px solid yellow;*/
 }
 
 .eventarticle {
@@ -289,7 +287,7 @@ article p {
 
 .contact article .name {
     font-weight: bold;
-    text-shadow: 0 0 5px rgba(33,41,48);
+    text-shadow: 0 0 5px rgb(33,41,48);
 }
 
 .contact article .name li {
@@ -303,7 +301,7 @@ article p {
 }
 
 footer {
-    background-color: rgba(33,41,48);
+    background-color: rgb(33,41,48);
     font-size: .75em;
     color: rgb(241,239,235);
     text-align: center;
@@ -350,8 +348,6 @@ form {
 
 }
 form fieldset {
-    /*border: 2px solid rgba(33,41,48);
-    border-radius: 7px;*/
     padding: 1rem;
     border: none;
     display: grid;
@@ -369,12 +365,6 @@ form legend {
     background-color: rgb(52,103,92);
     width: 100%;
 }
-
-
-
-/*form label input, form label select, form label textarea, form label, form div {
-    width: 100%;
-}*/
 
 form label.sbs {
     padding: 1em;
@@ -396,7 +386,7 @@ form label.top textarea {
     padding: .75rem;
     border-radius: 7px;
     font-size: 1rem;
-    border: 1px solid rgba(33,41,48);
+    border: 1px solid rgb(33,41,48);
     background-color: rgb(241,239,235);
     display: block;
     width: 100%;
@@ -405,8 +395,8 @@ form label.top textarea {
 form input.submitButton {
     padding: 1rem;
     border-radius: 7px;
-    border: 1px solid rgba(33,41,48);
-    background-color: rgba(33,41,48);
+    border: 1px solid rgb(33,41,48);
+    background-color: rgb(33,41,48);
     color: rgb(241,239,235);
     font-size: 1.25rem;
     width: 50%;
@@ -453,9 +443,9 @@ form label.top #ratingvalue {
 }
 
 #cityinfo a {
-    color: rgba(33,41,48);
-    background-color: rgb(52,103,92,0.5);
-    border: 4px solid rgba(33,41,48);
+    color: rgb(33,41,48);
+    background-color: rgba(52,103,92,0.5);
+    border: 4px solid rgb(33,41,48);
     box-shadow: 0 0 10px 5px rgb(221,221,221);
     text-decoration: none;
     text-align: center;
@@ -469,7 +459,7 @@ form label.top #ratingvalue {
 #cityinfo h2 {
     font-family: 'Paprika', cursive;
     padding: .2em;
-    text-shadow: 2px 2px 2px rgba(33,41,48);
+    text-shadow: 2px 2px 2px rgb(33,41,48);
     font-weight: bolder;
     font-size: 2rem;
 }
@@ -477,6 +467,7 @@ form label.top #ratingvalue {
 #cityinfo img {
     width: 100%;
     margin: 0;
+    vertical-align: bottom;
 }
 
 #cityinfo h3 {
