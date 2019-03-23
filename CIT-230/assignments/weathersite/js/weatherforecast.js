@@ -12,13 +12,9 @@ forecastRequest.open('GET', forecastURLstring, true);
 forecastRequest.send();
 forecastRequest.onload = function () {
     let forecastData = JSON.parse(forecastRequest.responseText);
-    console.log(forecastData);
-
     let forecastIcon = [];
     let forecastAlt = [];
     let forecastTemp = [];
-
-    let j = 0;
 
     for (let i = 0; i < forecastData.list.length; i++) {
         let n = forecastData.list[i].dt_txt;
@@ -35,19 +31,12 @@ forecastRequest.onload = function () {
 
     }
 
-    console.log(forecastTemp);
-    console.log(forecastIcon);
 
-    let temp1 = document.getElementById("1temp");
-    temp1.textContent = forecastTemp[0];
-    let temp2 = document.getElementById("2temp");
-    temp2.textContent = forecastTemp[1];
-    let temp3 = document.getElementById("3temp");
-    temp3.textContent = forecastTemp[2];
-    let temp4 = document.getElementById("4temp");
-    temp4.textContent = forecastTemp[3];
-    let temp5 = document.getElementById("5temp");
-    temp5.textContent = forecastTemp[4];
+    document.getElementById("1temp").textContent = forecastTemp[0].toFixed();
+    document.getElementById("2temp").textContent = forecastTemp[1].toFixed();
+    document.getElementById("3temp").textContent = forecastTemp[2].toFixed();
+    document.getElementById("4temp").textContent = forecastTemp[3].toFixed();
+    document.getElementById("5temp").textContent = forecastTemp[4].toFixed();
 
     let icon1 = document.getElementById("1icon");
     icon1.setAttribute("src", "https://openweathermap.org/img/w/" + forecastIcon[0] + ".png");

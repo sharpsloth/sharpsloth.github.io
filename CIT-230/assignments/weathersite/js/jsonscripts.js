@@ -1,9 +1,9 @@
-const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json" 
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json"
 const request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send()
-request.onload = function () { 
+request.onload = function () {
     let citydata = request.response;
     let cities = citydata['towns'];
     cities.forEach(city => {
@@ -12,7 +12,7 @@ request.onload = function () {
             let citylink = document.createElement('a');
             let cityname = document.createElement('h2');
             let citymotto = document.createElement('h3');
-            citymotto.setAttribute ('class', 'mottoh3');
+            citymotto.setAttribute('class', 'mottoh3');
             let cityyear = document.createElement('span');
             let citypop = document.createElement('span');
             let cityrainfall = document.createElement('span');

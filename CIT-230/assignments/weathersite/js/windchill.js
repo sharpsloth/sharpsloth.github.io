@@ -17,7 +17,7 @@ function windchill() {
 
         if (t <= 50 || s > 3) {
 
-            document.getElementById('windchill').innerHTML = result.toFixed(1);
+            document.getElementById('windchill').innerHTML = result.toFixed();
         } else {
             document.getElementById('windchill').innerHTML = "n/a";
         }

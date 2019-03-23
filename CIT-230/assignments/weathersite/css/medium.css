@@ -58,6 +58,7 @@
         margin: .5rem;
         font-style: italic;
     }
+
     form label.top #ratingvalue {
         width: 60%;
     }
