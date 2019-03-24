@@ -212,6 +212,12 @@ h5 {
     font-size: .75em;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
 article img {
     width: 100%;
     max-width: 300px;
